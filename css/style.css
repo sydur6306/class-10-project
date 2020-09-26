@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,200;1,500;1,600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	background:#fff;
+}
+.container{
+
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.card {
+    border: 0px solid rgba(0, 0, 0, 0);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.card-title a{
+	text-decoration: none;
+	color:#333;
+}
+.card-title a:hover{
+	color:#1B52D8;
+}
+.card-text:last-child {
+    color:#1B52D8;
+}
+.card-hober{
+	
+position: relative;
+border-radius: 5px;
+overflow: hidden;
+}
+.card-hober i{
+	
+position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 23px;
+    z-index: 1;
+}
+.card-hober span{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: #6753b7;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+.card-hober:hover a{
+	opacity: 1;
+	bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    color:#fff;
+}
+
+.card-hober::after{
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #001fff;
+	border-radius: 5px;
+	opacity: 0;
+	transition:all .2s;
+}
+.card-hober:hover::after{
+	opacity: 1;
+}
+.card-hober a{
+	position: absolute;
+	bottom: 40%;
+	left: 50%;
+	transform: translate(-50%, 40%);
+	z-index: 10;
+	opacity: ;
+	transition: all .6s;
+	opacity: 0;
+	padding: 10px 15px;
+}
+.card-hober a:hover{
+	bottom: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 1;
+	color: #001fff;
+}
+.card-hober img{
+	transition:all .5s;
+}
+.card-hober img{
+	border-radius: 5px;
+}
+.card-hober:hover img{
+	transform: scale(1.1);
+}
+.btn-check:checked + .btn-outline-light, .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
+    color: #001fff;
+}
+.skil-section h2{
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+.skil-section h2 strong{
+	font-weight: 600;
+}
+.banner-section .row{
+position: absolute;
+top: 50%;
+left: 100px;
+transform: translateY(-50%);
+}
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(13 110 253);
+}
+.banner-section h1{
+	font-weight: 600;
+}
+.banner-section p{
+	
+font-size: 13px;
+	
+font-weight: 500;
+	
+margin: 0;
+	
+margin: 13px 0;
+	
+line-height: 1.6;
+}
+
+@media(max-width: 991px){
+	.banner-section h1 {
+    font-size: 25px;
+}
+.banner-section h4{
+	font-size:15px;
+}
+.banner-section p{
+	font-size: 14px;
+    margin: 6px 0;
+}
+.banner-section .btn{
+	font-size: 15px;
+}
+.skil-section h2 {
+    font-size: 20px;
+    }
+}
+
+@media(max-width: 767px){
+	.banner-section img{
+		height:250px;
+		object-fit: cover;	
+	}
+	.banner-section p{
+		font-size: 10px;
+	}
+	.skil-section h2 {
+    font-size: 18px;
+}
+.card-title {
+    font-size: 15px;
+    }
+    .card-hober a {
+    	padding: 10px 10px;
+    	font-size:16px;
+    }
+}
+
+	@media(max-width: 575px){
+	.banner-section .row {
+   left:50px;
+   width:90%;
+
+}
+}
